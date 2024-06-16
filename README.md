@@ -122,9 +122,13 @@
     ```
     - Follow the prompts to configure your new Python project.
 4. **Configure Poetry to Use the Virtual Environment**:
-    - Tell Poetry to use the virtual environment:
+    - Tell Poetry to use the virtual environment (**bash**):
     ```sh
     poetry env use $(which python)
+    ```
+    - Or on Windows (**powershell**):
+    ```sh
+    poetry env use $(Get-Command python | Select-Object -ExpandProperty Source)
     ```
 5. **Install Project Dependencies**:
     - Add any necessary dependencies for your project using:
