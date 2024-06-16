@@ -1,6 +1,3 @@
-# AIOBSERVER2024
-2024 AI-OBSERVER Summer School - Software Engineering tips and practical examples.
-
 # Beginner's Guide to Git, GitHub, and Setting Up a Python Project
 
 ## Step 1: Install Visual Studio Code (VSCode) Locally
@@ -23,7 +20,29 @@
     - In VSCode, go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
     - Search for "Python" and install the official Python extension by Microsoft.
 
-## Step 2: Create a GitHub Account
+## Step 2: Install Git Locally
+
+1. **Download Git**:
+    - Go to the [Git download page](https://git-scm.com/downloads).
+    - Download the installer for your operating system (Windows, macOS, or Linux).
+
+2. **Install Git**:
+    - Follow the installation instructions for your operating system.
+    - On Windows, run the downloaded installer and follow the setup wizard. You can use the default settings.
+    - On macOS, open the downloaded `.dmg` file and follow the instructions.
+    - On Linux, use your package manager to install Git. For example, on Debian-based systems:
+    ```sh
+    sudo apt-get install git
+    ```
+
+3. **Verify Installation**:
+    - Open your terminal and run:
+    ```sh
+    git --version
+    ```
+    - You should see the Git version number printed.
+
+## Step 3: Create a GitHub Account
 
 1. **Visit GitHub**: Go to [github.com](https://github.com).
 2. **Sign Up**: Click on the "Sign up" button.
@@ -31,7 +50,7 @@
 4. **Verify Your Email**: Follow the instructions to verify your email address.
 5. **Complete Setup**: Follow the on-screen instructions to complete your account setup.
 
-## Step 3: Create a New Repository on GitHub
+## Step 4: Create a New Repository on GitHub
 
 1. **Log In**: Log into your GitHub account.
 2. **New Repository**: Click the "+" icon at the top right and select "New repository".
@@ -42,7 +61,7 @@
 4. **Initialize Repository**: Check "Initialize this repository with a README" if you want a README file.
 5. **Create Repository**: Click on "Create repository".
 
-## Step 4: Clone the Repository Locally
+## Step 5: Clone the Repository Locally
 
 1. **Copy Repository URL**:
     - On your repository page, click the green "Code" button.
@@ -59,7 +78,7 @@
     cd your-repository
     ```
 
-## Step 5: Install Python Locally
+## Step 6: Install Python Locally
 
 1. **Download Python**:
     - Go to [python.org](https://www.python.org) and download the latest version of Python.
@@ -73,7 +92,7 @@
     ```
     - You should see the Python version number printed.
 
-## Step 6: Initialize a New Python Project Using Poetry and Venv
+## Step 7: Initialize a New Python Project Using Poetry and Venv
 
 1. **Install Poetry**:
     - Follow the installation instructions from the [Poetry official website](https://python-poetry.org/docs/#installation).
@@ -115,4 +134,4 @@
 
 ---
 
-You've now set up VSCode, created a new GitHub repository, cloned it locally, installed Python, and initialized a new Python project using Poetry and a virtual environment!
+You've now set up VSCode, installed Git, created a new GitHub repository, cloned it locally, installed Python, and initialized a new Python project using Poetry and a virtual environment!
