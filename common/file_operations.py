@@ -8,6 +8,10 @@ from shapely.geometry import Polygon
 import netCDF4 as nc
 import pandas as pd
 
+# TODO : define some custom logic
+def custom_logic():
+    pass
+
 
 def create_mosaic_from_folder(
         input_folder: str, 
@@ -175,3 +179,19 @@ def clip_tiff_files(
 
     except Exception as e:
         print(f"An error occurred during clipping: {e}")
+
+
+def list_subfolders(path: str) -> list[str]:
+    """
+    Returns a list of all subfolders in the given folder path.
+    
+    :param path: Path to the parent folder.
+    :return: List of paths to the subfolders.
+    """
+    subfolders = []
+    for root, dirs, files in os.walk(path):
+        for dir in dirs:
+            subfolders.append(os.path.join(root, dir))
+        # Only get the immediate subdirectories, not recursive
+        break
+    return subfolders
